@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   },
   "dependencies": {
+    "autoprefixer": "9.8.6",
     "next": "9.5.5",
+    "postcss-import": "^12.0.1",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "tailwindcss": "^1.9.2"
   }
 }
