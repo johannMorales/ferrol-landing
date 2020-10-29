@@ -7,12 +7,12 @@ export default function ProductDetail() {
     <Container Background={FondoProductos}>
       <div className="p-4">
         <Detail
-          name="KD"
-          description="Sal marina secada a más de 110 grados centígrados, de granulometría extra-gruesa, libre de finos; clasificada y seleccionada, para obtener un producto de grado alimentario, seco, de fácil dosificación y de menor velocidad de disolución que las presentaciones de menor granulometría."
-          useCases="Desarrollada para la preparación controlada de salmueras de calidad alimentaria."
+          name="Impalpable"
+          description="Sal marina secada a más de 110 grados centígrados de granulometría muy fina, seleccionada, para obtener un producto de grado alimentario, seco y de fácil dosificación y alta solubilidad, libre de insolubles."
+          useCases="Desarrollada para usos que requieren una mayor dispersión y adherencia en seco a la superficie del insumo."
           presentations="50kg y 25 kg."
           envase="Bolsa sellada por calor recubierta con saco laminado."
-          image="/img/productos/kd-item.jpg"
+          image="/img/productos/impalpable-item.jpg"
         />
       </div>
     </Container>

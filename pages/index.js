@@ -1,67 +1,85 @@
-import Head from 'next/head'
-import styles from '../css/Home.module.css'
-import HeaderA from "../components/general/header";
+import Head from "next/head";
+import FondoHome from "../components/fondos/fondo-home";
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect } from "react";
+import styles from "../css/home.module.css";
+
+const Animated = ({ message }) => {
+  return <span className="transition-opacity"> {message} </span>;
+};
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <FondoHome>
+      <div>
 
-      <main className={styles.main}>
-        <HeaderA/>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      </div>
+      <div
+        style={{
+          position: "fixed",
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -90%)",
+          width: '100%'
+        }}
+        className="p-4"
+      >
+        <div className="md:mx-20">
+          <nav className="my-3 md:my-4">
+            <ul className="flex flex-wrap">
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Home
+              </li>
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Caracteristicas
+              </li>
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Productos
+              </li>
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Industrias
+              </li>
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Novedades
+              </li>
+              <li className="leading-none uppercase text-xs cursor-pointer font-normal text-primary hover:font-semibold my-1 mx-1 md:mx-2 md:text-sm">
+                Contactos
+              </li>
+              
+            </ul>
+          </nav>
+          <div className="mx-1">
+            <span className="block text-primary uppercase text-xl font-black md:text-6xl leading-none">
+              SAL FERROL
+            </span>
+            <span className="block text-primary md:text-xl">
+              Su origen marino aporta un sabor único y distintivo.
+            </span>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+        {/* <div className={styles.animated}> */}
+        {/* <div>
+          <div>
+            <span className="block text-primary uppercase text-4xl font-black">
+              SAL FERROL
+            </span>
+            <span className="block text-primary">
+              Su origen marino aporta un sabor único y distintivo.
+            </span>
+          </div>
+          <div>
+            <span className="block text-primary uppercase text-4xl font-black">
+              SAL DE MAR
+            </span>
+            <span className="block text-primary">
+              Naturalmente contiene micronutrientes esenciales
+            </span>
+            <span className="block text-primary font-black">
+              100% Producto Peruano
+            </span>
+          </div>
+        </div> */}
+      </div>
+    </FondoHome>
+  );
 }

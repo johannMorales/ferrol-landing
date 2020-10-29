@@ -8,6 +8,7 @@ export default function Detail({
   list,
   captions,
   image,
+  badge,
 }) {
   return (
     <div className="fixed z-10 inset-0 overflow-y-auto">
@@ -24,11 +25,14 @@ export default function Detail({
           aria-labelledby="modal-headline"
         >
           <div className="block md:flex relative">
-            <div className="block bg-white p-2 md:w-3/5">
-              <span className="block text-primary font-black uppercase text-2xl">
-                {name}
-              </span>
-              <hr className="text-primary" />
+            <div className="block bg-white p-4 md:px-8 md:py-6 md:w-3/5">
+              <div className="md:flex md:items-center">
+                <img src={badge} alt="badge" className="inline h-16 md:pr-2" />
+                <span className="block text-primary font-black uppercase text-2xl">
+                  {name}
+                </span>
+              </div>
+              <hr className="text-primary mb-4" />
               <span className="block text-primary font-black text-xl">
                 {product}
               </span>

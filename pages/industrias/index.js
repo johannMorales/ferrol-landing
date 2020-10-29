@@ -4,10 +4,8 @@ import Item from "../../components/industrias/item";
 
 const ItemAligned = (props) => {
   return (
-    <div className="lg:w-1/5 md:w-1/3">
-      <div className="m-1">
+    <div className="w-full my-2 lg:w-1/5 md:w-1/3 ">
         <Item {...props} />
-      </div>
     </div>
   );
 };
@@ -25,7 +23,7 @@ const Industrias = () => {
           </span>
           <div
             style={{ backgroundColor: "#011b39" }}
-            className="py-1 md:flex md:flex-wrap"
+            className="flex flex-wrap relative px-2"
           >
             <ItemAligned
               name="Panificación y pastelería"
@@ -69,7 +67,7 @@ const Industrias = () => {
             />
           </div>
         </div>
-        {/* <Detail
+        <Detail
           name="Panificación y pastelería"
           product="Sal de mar"
           subtitle="Refinada Gruesa / Refinada Fina"
@@ -81,11 +79,12 @@ const Industrias = () => {
             "Potenciador de sabor y color."
           ]}
           image="/img/industrias/panificacion-y-pasteleria-detalle.jpg"
+          badge="/img/industrias/panificacion-y-pasteleria-badge.png"
           captions={[
             "Corteza fina y crujiente",
             "Masa firme y manejable"
           ]}
-        /> */}
+        />
       </div>
     </React.Fragment>
   );

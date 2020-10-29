@@ -7,12 +7,12 @@ export default function ProductDetail() {
     <Container Background={FondoProductos}>
       <div className="p-4">
         <Detail
-          name="Molida gruesa"
-          description="Sal marina secada a más de 100 grados centígrados; molida y seleccionada, para obtener un producto de grado alimentario, libre de insolubles."
-          useCases="Desarrollada para la preparación de pescado seco salado y el mantenimiento de la cadena de frio."
+          name="Molida fina"
+          description="Sal marina secada a más de 100 grados centígrados; molida y seleccionada, para obtener un producto de grado alimentario de alta solubilidad, libre de insolubles."
+          useCases="Desarrollada para la preparación de quesos, conservas y otros procesos que requieran preparar salmueras homogéneas rápidamente."
           presentations="50kg y 25 kg."
           envase="Bolsa sellada por calor recubierta con saco laminado."
-          image="/img/productos/molida-gruesa-item.jpg"
+          image="/img/productos/molida-fina-item.jpg"
         />
       </div>
     </Container>
