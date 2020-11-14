@@ -1,10 +1,8 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-import Container from "../../components/general/container/container.component";
-import Detail from "../../components/productos/detail";
 import Item from "../../components/productos/item";
-import FondoProductos from "../../components/fondos/fondo-productos";
+import ProductoPage from "../../components/productos/page";
 
 function ItemAligned({ name, image, path }) {
   const router = useRouter();
@@ -18,10 +16,7 @@ function ItemAligned({ name, image, path }) {
 
 export default function Productos() {
   return (
-    <Container Background={FondoProductos}>
-      <span className="text-white text-center block pt-4 mb-2 font-bold text-2xl md:text-5xl">
-        NUESTROS PRODUCTOS
-      </span>
+    <ProductoPage>
       <div className="md:flex md:flex-wrap">
         <ItemAligned
           name="KD"
@@ -64,6 +59,6 @@ export default function Productos() {
           path="/productos/impalpable"
         />
       </div>
-    </Container>
+      </ProductoPage>
   );
 }

@@ -1,0 +1,20 @@
+.card {
+  background-color: transparent;
+  color: white;
+  text-align: justify;
+  @apply text-sm;
+
+  border: 1px solid white;
+}
+
+
+.card > .cardTop {
+  border-bottom: 1px solid white; 
+
+  @apply p-2 py-4 leading-snug;
+}
+
+.card > .cardBottom {
+
+  @apply p-2 pt-5 leading-tight;
+}

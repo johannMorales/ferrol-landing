@@ -1,9 +1,11 @@
 import React from "react";
+import styles from './fondo-imagen.styles.module.css';
+
 
 export default function FondoImagen({ image, position, size, children }) {
   return (
     <div
-      className="fixed w-full h-full"
+      className={styles.fondo}
       style={{
           overflow: 'scroll',
         background: `url(${image}) no-repeat`,

@@ -8,23 +8,20 @@ export default function Detail({
 }) {
   return (
     <React.Fragment>
-       <span className="text-white text-center block mb-8 font-bold text-2xl md:text-5xl">
-        NUESTROS PRODUCTOS
-      </span>
       <div
         className="p-4 md:py-8 md:px-10"
         style={{ backgroundColor: "#023360" }}
       >
-        <span className="text-white font-black uppercase text-3xl md:text-6xl">
+        <h2 className="text-white font-black uppercase text-3xl md:text-6xl leading-none my-2">
           {name}
-        </span>
+        </h2>
         <hr />
         <div className="md:flex">
           <div className="md:w-3/5">
-            <div className="text-white text-justify mt-2 md:mt-4 md:text-xl">
+            <div className="text-white text-justify mt-2 md:mt-4 md:text-lg">
               {description}
             </div>
-            <div className="text-white text-justify mt-2 md:mt-4 md:text-xl">
+            <div className="text-white text-justify mt-2 md:mt-4 md:text-lg">
               {useCases}
             </div>
           </div>
@@ -32,10 +29,10 @@ export default function Detail({
             <img className="w-full h-auto" alt={name} src={image} />
           </div>
         </div>
-        <div className="text-white mt-2 md:mt-4 md:text-xl">
+        <div className="text-white mt-2 md:mt-4 md:text-lg">
           <span className="font-black"> Presentaciones:</span> {presentations}
         </div>
-        <div className="text-white md:text-xl">
+        <div className="text-white md:text-lg">
           <span className="font-black"> Envase:</span> {envase}
         </div>
       </div>

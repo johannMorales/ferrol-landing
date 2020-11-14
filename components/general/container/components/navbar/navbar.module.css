@@ -1,0 +1,60 @@
+.navbar {
+  height: 100%;
+  display: inline-block;
+}
+
+.navbar > .navbarItem {
+  vertical-align: middle;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem;
+
+  @apply text-sm;
+}
+
+.navbar > .navbarItem:last-child {
+  margin-right: 0;
+}
+
+
+.navbarItem > a {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  vertical-align: middle;
+  height: 100%;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.submenu {
+  position: absolute;
+  background-color: white;
+
+  @apply p-4 py-2 absolute shadow-md z-50 border-t-2 border-primary;
+}
+
+.submenuItem > a {
+  display: block;
+  border-bottom: 1px solid #e6e6e6;
+  line-height: 1.5;
+  width: 100%;
+  padding: 18px 18px 18px 0px;
+  white-space: nowrap;
+  transition: all 0.4s;
+  font-weight: 400;
+  font-size: 13px;
+
+  @apply appearance-none bg-transparent;
+}
+
+.submenuItem > a:hover {
+  @apply text-primary;
+}
+
+.submenu > li:last-child > a {
+  border-bottom: none;
+}
